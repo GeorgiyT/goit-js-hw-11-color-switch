@@ -23,7 +23,7 @@ const startColorsChange = () => {
   timerId = setInterval(() => {
     ref.body.style.backgroundColor =
       colors[randomIntegerFromInterval(0, colors.length - 1)];
-  }, 50);
+  }, 1000);
   ref.buttonStart.removeEventListener("click", startColorsChange);
 };
 
